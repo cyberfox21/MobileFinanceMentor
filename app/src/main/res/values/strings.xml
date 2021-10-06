@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Mobile Finance Mentor</string>
+    <string name="vtb_logo">vtb logo</string>
+    <string name="splash_title">ВТБ Финансы</string>
 </resources>
