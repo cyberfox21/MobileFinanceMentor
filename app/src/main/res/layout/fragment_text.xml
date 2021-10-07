@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_gravity="center"
+        android:layout_height="200dp"
+        android:src="@drawable/ic_android_black_24dp"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:textColor="#FFFFFF"
+        android:fontFamily="@font/opensans_regular"
+        android:text="Привет,  наверняка ты неоднократно задавался вопросом, почему многие твои друзья и знакомые всё чаще вкладывают свои сбережения не в счёта в банках, а покупают акции или инвестируют. Попробуем разобраться. Представь, что в 2017 году у тебя было n-сумма рублей."
+        android:textSize="16sp" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textField"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Введите сумму">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:textColor="#FFFFFF"
+        android:fontFamily="@font/opensans_regular"
+        android:text="Если бы вы просто положили эти деньги на тумбочку или сделали вклад в банк, то сегодня эта сумма была бы всего"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+
+        android:textColor="#00AAFF"
+        android:gravity="left"
+        android:fontFamily="@font/opensans_bold"
+        android:text="800 000 рублей"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:textColor="#FFFFFF"
+        android:fontFamily="@font/opensans_regular"
+        android:text="А вот какую сумму вы могли бы получить, купив на эти же деньги акции Apple "
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+
+        android:textColor="#00AAFF"
+        android:gravity="left"
+        android:fontFamily="@font/opensans_bold"
+        android:text="1 200 000 рублей"
+        android:textSize="18sp" />
+
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:textColor="#FFFFFF"
+        android:fontFamily="@font/opensans_regular"
+        android:text="Впечатляет, не правда ли? На данном курсе мы научимся использовать финансы так, чтобы с течением времени ваши деньги не просто сохранялись, но и приносили доход. Готовы начать?"
+        android:textSize="16sp" />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_gravity="center"
+        android:layout_height="200dp"
+        android:src="@drawable/ic_android_black"/>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_gravity="center"
+        android:text="ПОНЯТНО!"/>
+
+
+
+
+
+</LinearLayout>

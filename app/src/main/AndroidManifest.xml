@@ -10,10 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MobileFinanceMentor">
         <activity
-            android:name=".MainActivity"
+            android:name=".presentation.MainActivity"
             android:exported="true" />
         <activity
-            android:name=".SplashScreen"
+            android:name=".presentation.SplashScreen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

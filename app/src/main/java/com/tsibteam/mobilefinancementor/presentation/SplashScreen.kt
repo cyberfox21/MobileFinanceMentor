@@ -1,4 +1,4 @@
-package com.tsibteam.mobilefinancementor
+package com.tsibteam.mobilefinancementor.presentation
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity

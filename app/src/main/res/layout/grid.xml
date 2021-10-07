@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<!--    <androidx.gridlayout.widget.GridLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--        xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--        xmlns:tools="http://schemas.android.com/tools"-->
+<!--        android:id="@+id/search_fragment"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_weight="1"-->
+<!--        android:background="#121212"-->
+<!--        android:clipToPadding="false"-->
+<!--        android:gravity="center_horizontal"-->
+<!--        android:overScrollMode="always"-->
+<!--        android:padding="4dp"-->
+<!--        android:scrollbars="vertical"-->
+<!--        app:columnCount="2"-->
+<!--        app:orientation="vertical"-->
+<!--        app:rowCount="3"-->
+<!--        tools:context=".MainActivity"-->
+<!--        tools:targetApi="lollipop">-->
+
+
+<!--        <com.google.android.material.card.MaterialCardView-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="0dp"-->
+<!--            android:layout_margin="12dp"-->
+<!--            android:clickable="true"-->
+<!--            android:focusable="true"-->
+<!--            android:minWidth="180dp"-->
+<!--            android:minHeight="200dp"-->
+<!--            app:cardBackgroundColor="#00121212"-->
+<!--            app:layout_columnWeight="1"-->
+<!--            app:layout_rowWeight="1">-->
+
+
+<!--            <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="@drawable/fer">-->
+
+<!--                <ImageView-->
+<!--                    android:layout_width="24dp"-->
+<!--                    android:layout_height="24dp"-->
+<!--                    android:layout_margin="10dp"-->
+<!--                    android:src="@drawable/ic_done"-->
+<!--                    app:layout_constraintBottom_toBottomOf="@+id/textView"-->
+<!--                    app:layout_constraintEnd_toEndOf="parent"-->
+<!--                    app:layout_constraintTop_toTopOf="@+id/textView2" />-->
+
+
+<!--                <ImageView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="180dp"-->
+<!--                    android:layout_margin="30dp"-->
+<!--                    android:src="@drawable/ic_android_black_24dp"-->
+<!--                    app:layout_constraintBottom_toTopOf="@+id/textView2"-->
+<!--                    app:layout_constraintEnd_toEndOf="parent"-->
+<!--                    app:layout_constraintStart_toStartOf="parent"-->
+<!--                    app:layout_constraintTop_toTopOf="parent" />-->
+
+
+<!--                <TextView-->
+<!--                    android:id="@+id/textView23"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginStart="10dp"-->
+<!--                    android:fontFamily="@font/opensans_bold"-->
+<!--                    android:text="Трейдинг"-->
+<!--                    android:textColor="#FFF"-->
+<!--                    android:textFontWeight="@integer/material_motion_duration_medium_2"-->
+<!--                    android:textSize="14sp"-->
+<!--                    app:layout_constraintBottom_toTopOf="@+id/textView"-->
+<!--                    app:layout_constraintStart_toStartOf="parent" />-->
+
+
+<!--                <TextView-->
+<!--                    android:id="@+id/textView2"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_margin="10dp"-->
+<!--                    android:layout_marginStart="5dp"-->
+<!--                    android:fontFamily="@font/opensans_regular"-->
+<!--                    android:text="Урок 1"-->
+<!--                    android:textColor="#808080"-->
+<!--                    app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                    app:layout_constraintStart_toStartOf="parent" />-->
+
+
+<!--            </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+
+<!--        </com.google.android.material.card.MaterialCardView>-->
+
+<!--        <com.google.android.material.card.MaterialCardView-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="0dp"-->
+<!--            android:layout_margin="12dp"-->
+<!--            android:clickable="true"-->
+<!--            android:focusable="true"-->
+<!--            android:minWidth="180dp"-->
+<!--            android:minHeight="200dp"-->
+<!--            app:cardBackgroundColor="#00121212"-->
+<!--            app:layout_columnWeight="1"-->
+<!--            app:layout_rowWeight="1">-->
+
+
+<!--            <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="@drawable/fer">-->
+
+<!--                <ImageView-->
+<!--                    android:layout_width="24dp"-->
+<!--                    android:layout_height="24dp"-->
+<!--                    android:layout_margin="10dp"-->
+<!--                    android:src="@drawable/ic_done"-->
+<!--                    app:layout_constraintBottom_toBottomOf="@+id/textView"-->
+<!--                    app:layout_constraintEnd_toEndOf="parent"-->
+<!--                    app:layout_constraintTop_toTopOf="@+id/textView2" />-->
+
+
+<!--                <ImageView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="180dp"-->
+<!--                    android:layout_margin="30dp"-->
+<!--                    android:src="@drawable/ic_android_black_24dp"-->
+<!--                    app:layout_constraintBottom_toTopOf="@+id/textView2"-->
+<!--                    app:layout_constraintEnd_toEndOf="parent"-->
+<!--                    app:layout_constraintStart_toStartOf="parent"-->
+<!--                    app:layout_constraintTop_toTopOf="parent" />-->
+
+
+<!--                <TextView-->
+<!--                    android:id="@+id/textView2"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginStart="10dp"-->
+<!--                    android:fontFamily="@font/opensans_bold"-->
+<!--                    android:text="Трейдинг"-->
+<!--                    android:textColor="#FFF"-->
+<!--                    android:textFontWeight="@integer/material_motion_duration_medium_2"-->
+<!--                    android:textSize="14sp"-->
+<!--                    app:layout_constraintBottom_toTopOf="@+id/textView"-->
+<!--                    app:layout_constraintStart_toStartOf="parent" />-->
+
+
+<!--                <TextView-->
+<!--                    android:id="@+id/textView"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_margin="10dp"-->
+<!--                    android:layout_marginStart="5dp"-->
+<!--                    android:fontFamily="@font/opensans_regular"-->
+<!--                    android:text="Урок 1"-->
+<!--                    android:textColor="#808080"-->
+<!--                    app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                    app:layout_constraintStart_toStartOf="parent" />-->
+
+
+<!--            </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+
+<!--        </com.google.android.material.card.MaterialCardView>-->
+
+
+<!--        <com.google.android.material.card.MaterialCardView-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="0dp"-->
+<!--            android:layout_margin="12dp"-->
+<!--            android:clickable="true"-->
+<!--            android:focusable="true"-->
+<!--            android:minWidth="180dp"-->
+<!--            android:minHeight="200dp"-->
+<!--            app:cardBackgroundColor="#00121212"-->
+<!--            app:layout_columnWeight="1"-->
+<!--            app:layout_rowWeight="1">-->
+
+
+<!--            <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="@drawable/fer">-->
+
+<!--                <ImageView-->
+<!--                    android:layout_width="24dp"-->
+<!--                    android:layout_height="24dp"-->
+<!--                    android:layout_margin="10dp"-->
+<!--                    android:src="@drawable/ic_done"-->
+<!--                    app:layout_constraintBottom_toBottomOf="@+id/textView"-->
+<!--                    app:layout_constraintEnd_toEndOf="parent"-->
+<!--                    app:layout_constraintTop_toTopOf="@+id/textView2" />-->
+
+
+<!--                <ImageView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="180dp"-->
+<!--                    android:layout_margin="30dp"-->
+<!--                    android:src="@drawable/ic_android_black_24dp"-->
+<!--                    app:layout_constraintBottom_toTopOf="@+id/textView2"-->
+<!--                    app:layout_constraintEnd_toEndOf="parent"-->
+<!--                    app:layout_constraintStart_toStartOf="parent"-->
+<!--                    app:layout_constraintTop_toTopOf="parent" />-->
+
+
+<!--                <TextView-->
+<!--                    android:id="@+id/textView2"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginStart="10dp"-->
+<!--                    android:fontFamily="@font/opensans_bold"-->
+<!--                    android:text="Трейдинг"-->
+<!--                    android:textColor="#FFF"-->
+<!--                    android:textFontWeight="@integer/material_motion_duration_medium_2"-->
+<!--                    android:textSize="14sp"-->
+<!--                    app:layout_constraintBottom_toTopOf="@+id/textView"-->
+<!--                    app:layout_constraintStart_toStartOf="parent" />-->
+
+
+<!--                <TextView-->
+<!--                    android:id="@+id/textView"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_margin="10dp"-->
+<!--                    android:layout_marginStart="5dp"-->
+<!--                    android:fontFamily="@font/opensans_regular"-->
+<!--                    android:text="Урок 1"-->
+<!--                    android:textColor="#808080"-->
+<!--                    app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                    app:layout_constraintStart_toStartOf="parent" />-->
+
+
+<!--            </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+
+<!--        </com.google.android.material.card.MaterialCardView>-->
+
+
+<!--        <com.google.android.material.card.MaterialCardView-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="0dp"-->
+<!--            android:layout_margin="12dp"-->
+<!--            android:clickable="true"-->
+<!--            android:focusable="true"-->
+<!--            android:minWidth="180dp"-->
+<!--            android:minHeight="200dp"-->
+<!--            app:cardBackgroundColor="#00121212"-->
+<!--            app:layout_columnWeight="1"-->
+<!--            app:layout_rowWeight="1">-->
+
+
+<!--            <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="@drawable/fer">-->
+
+<!--                <ImageView-->
+<!--                    android:layout_width="24dp"-->
+<!--                    android:layout_height="24dp"-->
+<!--                    android:layout_margin="10dp"-->
+<!--                    android:src="@drawable/ic_done"-->
+<!--                    app:layout_constraintBottom_toBottomOf="@+id/textView"-->
+<!--                    app:layout_constraintEnd_toEndOf="parent"-->
+<!--                    app:layout_constraintTop_toTopOf="@+id/textView2" />-->
+
+
+<!--                <ImageView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="180dp"-->
+<!--                    android:layout_margin="30dp"-->
+<!--                    android:src="@drawable/ic_android_black_24dp"-->
+<!--                    app:layout_constraintBottom_toTopOf="@+id/textView2"-->
+<!--                    app:layout_constraintEnd_toEndOf="parent"-->
+<!--                    app:layout_constraintStart_toStartOf="parent"-->
+<!--                    app:layout_constraintTop_toTopOf="parent" />-->
+
+
+<!--                <TextView-->
+<!--                    android:id="@+id/textView2"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginStart="10dp"-->
+<!--                    android:fontFamily="@font/opensans_bold"-->
+<!--                    android:text="Трейдинг"-->
+<!--                    android:textColor="#FFF"-->
+<!--                    android:textFontWeight="@integer/material_motion_duration_medium_2"-->
+<!--                    android:textSize="14sp"-->
+<!--                    app:layout_constraintBottom_toTopOf="@+id/textView"-->
+<!--                    app:layout_constraintStart_toStartOf="parent" />-->
+
+
+<!--                <TextView-->
+<!--                    android:id="@+id/textView"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_margin="10dp"-->
+<!--                    android:layout_marginStart="5dp"-->
+<!--                    android:fontFamily="@font/opensans_regular"-->
+<!--                    android:text="Урок 1"-->
+<!--                    android:textColor="#808080"-->
+<!--                    app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                    app:layout_constraintStart_toStartOf="parent" />-->
+
+
+<!--            </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+
+<!--        </com.google.android.material.card.MaterialCardView>-->
+
+
+<!--        <com.google.android.material.card.MaterialCardView-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="0dp"-->
+<!--            android:layout_margin="12dp"-->
+<!--            android:clickable="true"-->
+<!--            android:focusable="true"-->
+<!--            android:minWidth="180dp"-->
+<!--            android:minHeight="200dp"-->
+<!--            app:cardBackgroundColor="#00121212"-->
+<!--            app:layout_columnWeight="1"-->
+<!--            app:layout_rowWeight="1">-->
+
+
+<!--            <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="@drawable/fer">-->
+
+<!--                <ImageView-->
+<!--                    android:layout_width="24dp"-->
+<!--                    android:layout_height="24dp"-->
+<!--                    android:layout_margin="10dp"-->
+<!--                    android:src="@drawable/ic_done"-->
+<!--                    app:layout_constraintBottom_toBottomOf="@+id/textView"-->
+<!--                    app:layout_constraintEnd_toEndOf="parent"-->
+<!--                    app:layout_constraintTop_toTopOf="@+id/textView2" />-->
+
+
+<!--                <ImageView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="180dp"-->
+<!--                    android:layout_margin="30dp"-->
+<!--                    android:src="@drawable/ic_android_black_24dp"-->
+<!--                    app:layout_constraintBottom_toTopOf="@+id/textView2"-->
+<!--                    app:layout_constraintEnd_toEndOf="parent"-->
+<!--                    app:layout_constraintStart_toStartOf="parent"-->
+<!--                    app:layout_constraintTop_toTopOf="parent" />-->
+
+
+<!--                <TextView-->
+<!--                    android:id="@+id/textView2"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginStart="10dp"-->
+<!--                    android:fontFamily="@font/opensans_bold"-->
+<!--                    android:text="Трейдинг"-->
+<!--                    android:textColor="#FFF"-->
+<!--                    android:textFontWeight="@integer/material_motion_duration_medium_2"-->
+<!--                    android:textSize="14sp"-->
+<!--                    app:layout_constraintBottom_toTopOf="@+id/textView"-->
+<!--                    app:layout_constraintStart_toStartOf="parent" />-->
+
+
+<!--                <TextView-->
+<!--                    android:id="@+id/textView"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_margin="10dp"-->
+<!--                    android:layout_marginStart="5dp"-->
+<!--                    android:fontFamily="@font/opensans_regular"-->
+<!--                    android:text="Урок 1"-->
+<!--                    android:textColor="#808080"-->
+<!--                    app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                    app:layout_constraintStart_toStartOf="parent" />-->
+
+
+<!--            </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+
+<!--        </com.google.android.material.card.MaterialCardView>-->
+
+
+<!--        <com.google.android.material.card.MaterialCardView-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="0dp"-->
+<!--            android:layout_margin="12dp"-->
+<!--            android:clickable="true"-->
+<!--            android:focusable="true"-->
+<!--            android:minWidth="180dp"-->
+<!--            android:minHeight="200dp"-->
+<!--            app:cardBackgroundColor="#00121212"-->
+<!--            app:layout_columnWeight="1"-->
+<!--            app:layout_rowWeight="1">-->
+
+
+<!--            <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="@drawable/fer">-->
+
+<!--                <ImageView-->
+<!--                    android:layout_width="24dp"-->
+<!--                    android:layout_height="24dp"-->
+<!--                    android:layout_margin="10dp"-->
+<!--                    android:src="@drawable/ic_done"-->
+<!--                    app:layout_constraintBottom_toBottomOf="@+id/textView"-->
+<!--                    app:layout_constraintEnd_toEndOf="parent"-->
+<!--                    app:layout_constraintTop_toTopOf="@+id/textView2" />-->
+
+
+<!--                <ImageView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="180dp"-->
+<!--                    android:layout_margin="30dp"-->
+<!--                    android:src="@drawable/ic_android_black_24dp"-->
+<!--                    app:layout_constraintBottom_toTopOf="@+id/textView2"-->
+<!--                    app:layout_constraintEnd_toEndOf="parent"-->
+<!--                    app:layout_constraintStart_toStartOf="parent"-->
+<!--                    app:layout_constraintTop_toTopOf="parent" />-->
+
+
+<!--                <TextView-->
+<!--                    android:id="@+id/textView2"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginStart="10dp"-->
+<!--                    android:fontFamily="@font/opensans_bold"-->
+<!--                    android:text="Трейдинг"-->
+<!--                    android:textColor="#FFF"-->
+<!--                    android:textFontWeight="@integer/material_motion_duration_medium_2"-->
+<!--                    android:textSize="14sp"-->
+<!--                    app:layout_constraintBottom_toTopOf="@+id/textView"-->
+<!--                    app:layout_constraintStart_toStartOf="parent" />-->
+
+
+<!--                <TextView-->
+<!--                    android:id="@+id/textView"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_margin="10dp"-->
+<!--                    android:layout_marginStart="5dp"-->
+<!--                    android:fontFamily="@font/opensans_regular"-->
+<!--                    android:text="Урок 1"-->
+<!--                    android:textColor="#808080"-->
+<!--                    app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                    app:layout_constraintStart_toStartOf="parent" />-->
+
+
+<!--            </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+
+<!--        </com.google.android.material.card.MaterialCardView>-->
+
+
+<!--    </androidx.gridlayout.widget.GridLayout>-->
+</androidx.constraintlayout.widget.ConstraintLayout>
