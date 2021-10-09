@@ -1,8 +1,9 @@
-package com.tsibteam.mobilefinancementor.presentation
+package com.tsibteam.mobilefinancementor.presentation.splash
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.tsibteam.mobilefinancementor.databinding.SplashScreenBinding
+import com.tsibteam.mobilefinancementor.presentation.mainlessonsmenu.MainActivity
 import kotlinx.coroutines.*
 
 class SplashScreen : AppCompatActivity() {

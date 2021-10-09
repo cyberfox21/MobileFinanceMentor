@@ -1,4 +1,4 @@
-package com.tsibteam.mobilefinancementor.presentation
+package com.tsibteam.mobilefinancementor.presentation.mainlessonsmenu
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -8,6 +8,13 @@ import com.tsibteam.mobilefinancementor.databinding.ItemLessonCardBinding
 import com.tsibteam.mobilefinancementor.domain.Lesson
 
 class LessonGridAdapter : ListAdapter<Lesson, LessonViewHolder>(LessonDiffCallback()) {
+
+    var onLessonClickListener : OnLessonClickListener? = null
+
+    interface OnLessonClickListener{
+        fun onLessonClick(position: Int)
+    }
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): LessonViewHolder {
         return LessonViewHolder(ItemLessonCardBinding.inflate(LayoutInflater.from(parent.context)))
     }
@@ -20,6 +27,9 @@ class LessonGridAdapter : ListAdapter<Lesson, LessonViewHolder>(LessonDiffCallba
             tvTitle.text = lesson.title
             tvLessonNumber.text = lesson.id.toString()
             ivLessonCheck.setImageResource(getCheckResource(lesson.check))
+        }
+        binding.root.setOnClickListener {
+            onLessonClickListener?.onLessonClick(position)
         }
     }
 

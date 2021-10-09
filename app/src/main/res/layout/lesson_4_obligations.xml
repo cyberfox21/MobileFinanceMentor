@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+
+        android:fontFamily="@font/opensans_bold"
+        android:gravity="left"
+        android:text="Облигации"
+        android:textColor="@color/blue"
+        android:textSize="18sp" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:fontFamily="@font/opensans_regular"
+        android:text="@string/about_obligations"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+
+        android:fontFamily="@font/opensans_bold"
+        android:gravity="left"
+        android:text="Цена и доходность"
+        android:textColor="@color/blue"
+        android:textSize="18sp" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:fontFamily="@font/opensans_regular"
+        android:text="@string/cost_of_obligations"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+
+        android:fontFamily="@font/opensans_bold"
+        android:gravity="left"
+        android:text="Номинал"
+        android:textColor="@color/blue"
+        android:textSize="18sp" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:fontFamily="@font/opensans_regular"
+        android:text="сколько денег вам вернут, когда срок облигации закончится, то есть наступит «дата погашения облигации"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+
+        android:fontFamily="@font/opensans_bold"
+        android:gravity="left"
+        android:text="Цена"
+        android:textColor="@color/blue"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:fontFamily="@font/opensans_regular"
+        android:text="@string/cost_obligtion"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+
+        android:fontFamily="@font/opensans_bold"
+        android:gravity="left"
+        android:text="От чего зависит доходность"
+        android:textColor="@color/blue"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:fontFamily="@font/opensans_regular"
+        android:text="@string/cost_obligtion"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+
+        android:fontFamily="@font/opensans_bold"
+        android:gravity="left"
+        android:text="На какой срок инвестирования подходят"
+        android:textColor="@color/blue"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:fontFamily="@font/opensans_regular"
+        android:text="@string/on_what_time_obligation"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+
+    <com.google.android.material.button.MaterialButton
+
+        android:id="@+id/btn_understand"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="15dp"
+        android:text="ПОНЯТНО!" />
+
+
+</LinearLayout>

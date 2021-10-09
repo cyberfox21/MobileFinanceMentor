@@ -1,4 +1,4 @@
-package com.tsibteam.mobilefinancementor.presentation
+package com.tsibteam.mobilefinancementor.presentation.mainlessonsmenu
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

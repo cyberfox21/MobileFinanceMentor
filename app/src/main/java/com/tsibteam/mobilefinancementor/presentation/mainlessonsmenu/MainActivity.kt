@@ -1,20 +1,21 @@
-package com.tsibteam.mobilefinancementor.presentation
+package com.tsibteam.mobilefinancementor.presentation.mainlessonsmenu
 
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.GridLayoutManager
 import com.tsibteam.mobilefinancementor.databinding.ActivityMainBinding
+import com.tsibteam.mobilefinancementor.presentation.lessonsfragment.LessonActivity
+import com.tsibteam.mobilefinancementor.presentation.mainlessonsmenu.LessonGridAdapter.*
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity(){
 
     private lateinit var binding: ActivityMainBinding
 
-    private val gridAdapter by lazy {
-        LessonGridAdapter()
-    }
+    private lateinit var gridAdapter : LessonGridAdapter
 
     private val viewModel by lazy {
         ViewModelProvider(this)[MainViewModel::class.java]
@@ -40,9 +41,18 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun setupRecyclerView() {
+        gridAdapter = LessonGridAdapter()
         with(binding) {
             lessonRecycler.layoutManager = GridLayoutManager(this@MainActivity, 2)
             lessonRecycler.adapter = gridAdapter
+        }
+        gridAdapter.onLessonClickListener = object : LessonGridAdapter.OnLessonClickListener{
+            override fun onLessonClick(position: Int) {
+                val intent = LessonActivity.newIntent(this@MainActivity, position)
+                Log.d("MainActivity", "gridAdapter.onLessonClickListener")
+                startActivity(intent)
+            }
+
         }
     }
 
@@ -51,4 +61,5 @@ class MainActivity : AppCompatActivity() {
             return Intent(context, MainActivity::class.java)
         }
     }
+
 }

@@ -7,7 +7,7 @@ import com.tsibteam.mobilefinancementor.domain.LessonsRepository
 
 object LessonsRepositoryImpl : LessonsRepository {
 
-    private const val LESSONS_COUNT = 11
+    private const val LESSONS_COUNT = 5
 
     private var lessons = ArrayList<Lesson>()
 

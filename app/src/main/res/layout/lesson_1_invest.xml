@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_gravity="center"
+        android:layout_height="200dp"
+        android:src="@drawable/ic_android_black_24dp"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:textColor="#FFFFFF"
+        android:fontFamily="@font/opensans_regular"
+        android:text="@string/why_must_i_invest"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+
+        android:textColor="@color/blue"
+        android:gravity="left"
+        android:fontFamily="@font/opensans_bold"
+        android:text="Во что можно инвестировать?"
+        android:textSize="18sp" />
+
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:textColor="#FFFFFF"
+        android:fontFamily="@font/opensans_regular"
+        android:text="@string/in_what_must_i_invest"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+
+        android:textColor="@color/blue"
+        android:gravity="left"
+        android:fontFamily="@font/opensans_bold"
+        android:text="Как заработать на инвестициях?"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:textColor="#FFFFFF"
+        android:fontFamily="@font/opensans_regular"
+        android:text="@string/How_to_earn_money_on_invest"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+
+        android:textColor="@color/blue"
+        android:gravity="left"
+        android:fontFamily="@font/opensans_bold"
+        android:text="На какой срок можно инвестировать?"
+        android:textSize="18sp" />
+
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:textColor="#FFFFFF"
+        android:fontFamily="@font/opensans_regular"
+        android:text="@string/how_much_time_you_spend_on_invest"
+        android:textSize="16sp" />
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+
+        android:textColor="@color/blue"
+        android:gravity="left"
+        android:fontFamily="@font/opensans_bold"
+        android:text="Как начать?"
+        android:textSize="18sp" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:textColor="#FFFFFF"
+        android:fontFamily="@font/opensans_regular"
+        android:text="@string/how_to_start_invest"
+        android:textSize="16sp" />
+
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_gravity="center"
+        android:layout_height="200dp"
+        android:src="@drawable/ic_android_black"/>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_understand"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_gravity="center"
+        android:text="ПОНЯТНО!"/>
+
+
+
+
+
+</LinearLayout>

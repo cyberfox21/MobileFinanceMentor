@@ -1,4 +1,4 @@
-package com.tsibteam.mobilefinancementor.presentation
+package com.tsibteam.mobilefinancementor.presentation.mainlessonsmenu
 
 import androidx.recyclerview.widget.DiffUtil
 import com.tsibteam.mobilefinancementor.domain.Lesson

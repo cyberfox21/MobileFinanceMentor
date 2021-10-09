@@ -1,69 +1,80 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_margin="50dp"
-    android:clickable="true"
-    android:focusable="true"
-    android:minWidth="180dp"
-    android:minHeight="180dp"
-    app:cardBackgroundColor="#00121212"
-    app:layout_columnWeight="1"
-    app:layout_constraintDimensionRatio="1:1"
-    app:layout_rowWeight="1">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+
+    <com.google.android.material.card.MaterialCardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Theme.MaterialComponents"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/fer">
+        android:clickable="true"
+        android:focusable="true"
+        android:minWidth="180dp"
+        android:minHeight="180dp"
+        android:padding="50dp"
+        app:cardCornerRadius="0dp"
+        app:cardBackgroundColor="#00121212"
+        app:layout_columnWeight="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_rowWeight="1">
 
-        <ImageView
-            android:id="@+id/iv_lesson_check"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:layout_margin="10dp"
-            tools:src="@drawable/ic_done"
-            app:layout_constraintBottom_toBottomOf="@+id/tv_lesson_number"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/tv_title" />
-
-        <ImageView
-            android:id="@+id/iv_lesson_image"
-            android:layout_width="match_parent"
-            android:layout_height="180dp"
-            android:layout_margin="30dp"
-            android:src="@drawable/ic_android_black_24dp"
-            app:layout_constraintBottom_toTopOf="@+id/tv_title"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <TextView
-            android:id="@+id/tv_title"
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:textColor="#FFF"
-            android:textFontWeight="@integer/material_motion_duration_medium_2"
-            android:textSize="18dp"
-            app:layout_constraintBottom_toTopOf="@+id/tv_lesson_number"
-            app:layout_constraintStart_toStartOf="parent"
-            tools:text="Трейдинг" />
+            android:background="@drawable/fer">
+
+            <ImageView
+                android:id="@+id/iv_lesson_check"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_margin="10dp"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_lesson_number"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tv_title"
+                tools:src="@drawable/ic_done" />
+
+            <ImageView
+                android:id="@+id/iv_lesson_image"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_margin="20dp"
+                android:src="@drawable/ic_android_black_24dp"
+                app:layout_constraintBottom_toTopOf="@+id/tv_title"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:textColor="#FFF"
+                android:fontFamily="@font/opensans_bold"
+                android:textFontWeight="@integer/material_motion_duration_medium_2"
+                android:textSize="18dp"
+                app:layout_constraintBottom_toTopOf="@+id/tv_lesson_number"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:text="Трейдинг" />
 
 
-        <TextView
-            android:id="@+id/tv_lesson_number"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:layout_marginStart="5dp"
-            tools:text="Урок 1"
-            android:textColor="#808080"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
+            <TextView
+                android:id="@+id/tv_lesson_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginStart="5dp"
+                android:fontFamily="@font/opensans_regular"
+                android:textColor="#808080"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:text="Урок 1" />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
-</com.google.android.material.card.MaterialCardView>
+    </com.google.android.material.card.MaterialCardView>

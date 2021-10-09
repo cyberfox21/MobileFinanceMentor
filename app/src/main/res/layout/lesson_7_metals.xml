@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+
+        android:fontFamily="@font/opensans_bold"
+        android:gravity="left"
+        android:text="Золото, драгметаллы, нефть и другие товары"
+        android:textColor="@color/blue"
+        android:textSize="18sp" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:fontFamily="@font/opensans_regular"
+        android:text="@string/about_metals"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+
+        android:fontFamily="@font/opensans_bold"
+        android:gravity="left"
+        android:text="Как заработать"
+        android:textColor="@color/blue"
+        android:textSize="18sp" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:fontFamily="@font/opensans_regular"
+        android:text="Так же, как и на других активах, — продать дороже, чем купил."
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+
+        android:fontFamily="@font/opensans_bold"
+        android:gravity="left"
+        android:text="Как купить"
+        android:textColor="@color/blue"
+        android:textSize="18sp" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:fontFamily="@font/opensans_regular"
+        android:text="@string/how_to_earn_medals"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_understand"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="15dp"
+        android:text="ПОНЯТНО!" />
+
+</LinearLayout>
