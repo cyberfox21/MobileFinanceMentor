@@ -1,80 +1,113 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 
-    <com.google.android.material.card.MaterialCardView
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
-    style="@style/Theme.MaterialComponents"
-        android:layout_width="wrap_content"
+
+
+<com.google.android.material.card.MaterialCardView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="10dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="#fff"
+    android:minHeight="148dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:clickable="true"
-        android:focusable="true"
-        android:minWidth="180dp"
-        android:minHeight="180dp"
-        android:padding="50dp"
-        app:cardCornerRadius="0dp"
-        app:cardBackgroundColor="#00121212"
-        app:layout_columnWeight="1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintDimensionRatio="1:1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_rowWeight="1">
+        android:orientation="vertical">
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="wrap_content"
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_lesson_image"
+            android:layout_width="match_parent"
+            android:layout_height="194dp"
+            android:padding="25dp"
+            android:background="@android:color/transparent"
+            app:backgroundTint="@color/material_on_surface_emphasis_medium"
+            app:srcCompat="@drawable/ic_android_black_24dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/fer">
-
-            <ImageView
-                android:id="@+id/iv_lesson_check"
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:layout_margin="10dp"
-                app:layout_constraintBottom_toBottomOf="@+id/tv_lesson_number"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/tv_title"
-                tools:src="@drawable/ic_done" />
-
-            <ImageView
-                android:id="@+id/iv_lesson_image"
-                android:layout_width="match_parent"
-                android:layout_height="180dp"
-                android:layout_margin="20dp"
-                android:src="@drawable/ic_android_black_24dp"
-                app:layout_constraintBottom_toTopOf="@+id/tv_title"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+            android:padding="16dp"
+            android:paddingBottom="8dp"
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/tv_title"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/opensans_bold"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:textColor="#FFF"
-                android:fontFamily="@font/opensans_bold"
-                android:textFontWeight="@integer/material_motion_duration_medium_2"
-                android:textSize="18dp"
-                app:layout_constraintBottom_toTopOf="@+id/tv_lesson_number"
-                app:layout_constraintStart_toStartOf="parent"
-                tools:text="Трейдинг" />
+                android:layout_marginBottom="8dp"
+                android:text="Инвестиции"/>
 
 
             <TextView
-                android:id="@+id/tv_lesson_number"
+
+                android:textSize="16dp"
+                android:fontFamily="@font/opensans_regular"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:layout_marginStart="5dp"
-                android:fontFamily="@font/opensans_regular"
-                android:textColor="#808080"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                tools:text="Урок 1" />
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="На этом уровне вам предстоит сразиться со следующими противниками"/>
 
-        </androidx.constraintlayout.widget.ConstraintLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp"
+                android:background="?attr/dividerHorizontal"/>
 
-    </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.chip.ChipGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_component1"
+                    style="@style/Widget.MaterialComponents.Chip.Action"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Инвестирование"/>
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_component2"
+                    style="@style/Widget.MaterialComponents.Chip.Action"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Депозит"/>
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_component3"
+                    style="@style/Widget.MaterialComponents.Chip.Action"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Инфляция"/>
+            </com.google.android.material.chip.ChipGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="16dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:orientation="horizontal">
+
+            <RatingBar
+                android:id="@+id/rating_bar"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:isIndicator="true"
+                android:numStars="9"
+                android:rating="3"
+
+                android:stepSize="0.5"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

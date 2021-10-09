@@ -26,7 +26,7 @@
         android:id="@+id/toolbar"
         android:layout_width="0dp"
         app:titleTextAppearance="@style/TextAppearance.AppCompat.Title"
-        app:title="1. Финансы"
+        tools:title="1. Финансы"
         style="@style/Widget.MaterialComponents.Toolbar"
 
         android:background="#1e1e1e"

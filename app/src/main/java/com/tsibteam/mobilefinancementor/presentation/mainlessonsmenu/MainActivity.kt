@@ -6,16 +6,16 @@ import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
-import androidx.recyclerview.widget.GridLayoutManager
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.tsibteam.mobilefinancementor.databinding.ActivityMainBinding
+import com.tsibteam.mobilefinancementor.domain.Lesson
 import com.tsibteam.mobilefinancementor.presentation.lessonsfragment.LessonActivity
-import com.tsibteam.mobilefinancementor.presentation.mainlessonsmenu.LessonGridAdapter.*
 
-class MainActivity : AppCompatActivity(){
+class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
 
-    private lateinit var gridAdapter : LessonGridAdapter
+    private lateinit var gridAdapter: LessonGridAdapter
 
     private val viewModel by lazy {
         ViewModelProvider(this)[MainViewModel::class.java]
@@ -43,12 +43,16 @@ class MainActivity : AppCompatActivity(){
     private fun setupRecyclerView() {
         gridAdapter = LessonGridAdapter()
         with(binding) {
-            lessonRecycler.layoutManager = GridLayoutManager(this@MainActivity, 2)
+            lessonRecycler.layoutManager = LinearLayoutManager(this@MainActivity)
             lessonRecycler.adapter = gridAdapter
         }
-        gridAdapter.onLessonClickListener = object : LessonGridAdapter.OnLessonClickListener{
-            override fun onLessonClick(position: Int) {
-                val intent = LessonActivity.newIntent(this@MainActivity, position)
+        gridAdapter.onLessonClickListener = object : LessonGridAdapter.OnLessonClickListener {
+            override fun onLessonClick(position: Int, lesson: Lesson) {
+                val intent = LessonActivity.newIntent(
+                    this@MainActivity,
+                    position,
+                    lesson
+                )
                 Log.d("MainActivity", "gridAdapter.onLessonClickListener")
                 startActivity(intent)
             }

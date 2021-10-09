@@ -9,10 +9,10 @@ import com.tsibteam.mobilefinancementor.domain.Lesson
 
 class LessonGridAdapter : ListAdapter<Lesson, LessonViewHolder>(LessonDiffCallback()) {
 
-    var onLessonClickListener : OnLessonClickListener? = null
+    var onLessonClickListener: OnLessonClickListener? = null
 
-    interface OnLessonClickListener{
-        fun onLessonClick(position: Int)
+    interface OnLessonClickListener {
+        fun onLessonClick(position: Int, lesson: Lesson)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): LessonViewHolder {
@@ -25,11 +25,13 @@ class LessonGridAdapter : ListAdapter<Lesson, LessonViewHolder>(LessonDiffCallba
         with(binding) {
             ivLessonImage.setImageResource(lesson.image)
             tvTitle.text = lesson.title
-            tvLessonNumber.text = lesson.id.toString()
-            ivLessonCheck.setImageResource(getCheckResource(lesson.check))
+            ratingBar.rating = lesson.power.toFloat()
+            chipComponent1.text = lesson.chip.chip1
+            chipComponent2.text = lesson.chip.chip2
+            chipComponent3.text = lesson.chip.chip3
         }
         binding.root.setOnClickListener {
-            onLessonClickListener?.onLessonClick(position)
+            onLessonClickListener?.onLessonClick(position, lesson)
         }
     }
 

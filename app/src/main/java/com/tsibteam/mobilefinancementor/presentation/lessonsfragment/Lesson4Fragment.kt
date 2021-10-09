@@ -1,21 +1,18 @@
 package com.tsibteam.mobilefinancementor.presentation.lessonsfragment
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
-import com.tsibteam.mobilefinancementor.databinding.Lesson1InvestBinding
-import com.tsibteam.mobilefinancementor.databinding.Lesson3AciiBinding
 import com.tsibteam.mobilefinancementor.databinding.Lesson4ObligationsBinding
-import java.lang.RuntimeException
 
 class Lesson4Fragment : Fragment() {
 
-    private var _binding : Lesson4ObligationsBinding? = null
-    private val binding : Lesson4ObligationsBinding
-    get() = _binding ?: throw RuntimeException("Lesson4ObligationsBinding == null")
+    private var _binding: Lesson4ObligationsBinding? = null
+    private val binding: Lesson4ObligationsBinding
+        get() = _binding ?: throw RuntimeException("Lesson4ObligationsBinding == null")
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
