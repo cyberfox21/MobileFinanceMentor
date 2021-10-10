@@ -5,7 +5,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.ListAdapter
 import com.tsibteam.mobilefinancementor.R
 import com.tsibteam.mobilefinancementor.databinding.ItemLessonCardBinding
-import com.tsibteam.mobilefinancementor.domain.Lesson
+import com.tsibteam.mobilefinancementor.domain.entity.Lesson
 
 class LessonGridAdapter : ListAdapter<Lesson, LessonViewHolder>(LessonDiffCallback()) {
 

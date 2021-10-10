@@ -2,9 +2,9 @@ package com.tsibteam.mobilefinancementor.data
 
 import com.tsibteam.mobilefinancementor.Constants
 import com.tsibteam.mobilefinancementor.R
-import com.tsibteam.mobilefinancementor.domain.Chip
-import com.tsibteam.mobilefinancementor.domain.Lesson
-import com.tsibteam.mobilefinancementor.domain.LessonsRepository
+import com.tsibteam.mobilefinancementor.domain.entity.Chip
+import com.tsibteam.mobilefinancementor.domain.entity.Lesson
+import com.tsibteam.mobilefinancementor.domain.repository.LessonsRepository
 
 
 object LessonsRepositoryImpl : LessonsRepository {

@@ -8,7 +8,8 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.tsibteam.mobilefinancementor.databinding.ActivityMainBinding
-import com.tsibteam.mobilefinancementor.domain.Lesson
+import com.tsibteam.mobilefinancementor.domain.entity.Lesson
+import com.tsibteam.mobilefinancementor.presentation.ProfileActivity
 import com.tsibteam.mobilefinancementor.presentation.lessonsfragment.LessonActivity
 
 class MainActivity : AppCompatActivity() {
@@ -25,9 +26,16 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setBinding()
         setContentView(binding.root)
+        addListeners()
         setupRecyclerView()
         observeViewModel()
         viewModel.getList()
+    }
+
+    private fun addListeners() {
+        binding.btnProfile.setOnClickListener {
+            startActivity(ProfileActivity.newIntent(this))
+        }
     }
 
     private fun observeViewModel() {

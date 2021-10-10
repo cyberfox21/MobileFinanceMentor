@@ -1,7 +1,7 @@
 package com.tsibteam.mobilefinancementor.presentation.mainlessonsmenu
 
 import androidx.recyclerview.widget.DiffUtil
-import com.tsibteam.mobilefinancementor.domain.Lesson
+import com.tsibteam.mobilefinancementor.domain.entity.Lesson
 
 class LessonDiffCallback : DiffUtil.ItemCallback<Lesson>() {
 

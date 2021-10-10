@@ -38,12 +38,12 @@
         <ImageView
             android:id="@+id/toolbar_logo"
             android:layout_width="wrap_content"
-            android:layout_height="35dp"
+            android:layout_height="24dp"
             android:layout_gravity="right|center_vertical"
             android:layout_marginRight="10dp"
             android:layout_marginTop="12dp"
             android:adjustViewBounds="true"
-            android:src="@drawable/toolbar_logo"/>
+            android:src="@drawable/ic_baseline_logo_24"/>
 
 
     </androidx.appcompat.widget.Toolbar>

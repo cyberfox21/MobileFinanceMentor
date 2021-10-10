@@ -1,7 +1,7 @@
 <resources>
-    <string name="app_name">Mobile Finance Mentor</string>
+    <string name="app_name">ФинМатрица</string>
     <string name="vtb_logo">vtb logo</string>
-    <string name="splash_title">ВТБ Финансы</string>
+    <string name="splash_title">ФинМатрица</string>
 
     <string name="why_must_i_invest">Инвестиции помогают накопить на обучение, путешествия, новую машину, дом в Испании, пенсию и на что угодно ещё. Чем раньше вы начнёте инвестировать, тем быстрее достигнете своей финансовой цели.
 

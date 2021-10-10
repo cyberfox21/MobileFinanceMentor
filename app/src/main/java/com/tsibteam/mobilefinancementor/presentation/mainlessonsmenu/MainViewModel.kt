@@ -4,8 +4,8 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.tsibteam.mobilefinancementor.data.LessonsRepositoryImpl
-import com.tsibteam.mobilefinancementor.domain.GetLessonListUseCase
-import com.tsibteam.mobilefinancementor.domain.Lesson
+import com.tsibteam.mobilefinancementor.domain.usecase.GetLessonListUseCase
+import com.tsibteam.mobilefinancementor.domain.entity.Lesson
 
 class MainViewModel : ViewModel() {
 

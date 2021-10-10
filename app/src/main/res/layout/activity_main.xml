@@ -8,31 +8,35 @@
 
     <com.google.android.material.appbar.MaterialToolbar
         android:id="@+id/materialToolBar"
-        android:layout_margin="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        app:navigationIcon="@drawable/ic_baseline_menu_24"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:titleCentered="true"
-        app:title="Привет, Илья">
+        app:title="ФинМатрица"
+        app:titleCentered="true">
 
 
         <ImageView
-            android:id="@+id/toolbar_logo"
+            android:id="@+id/btn_profile"
             android:layout_width="wrap_content"
-            android:layout_height="35dp"
+            android:layout_height="24dp"
             android:layout_gravity="right|center_vertical"
-            android:layout_marginRight="10dp"
             android:layout_marginTop="12dp"
+            android:layout_marginRight="10dp"
             android:adjustViewBounds="true"
-            android:src="@drawable/toolbar_logo"/>
+            android:src="@drawable/ic_baseline_logo_24" />
 
     </com.google.android.material.appbar.MaterialToolbar>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/lesson_recycler"
         android:layout_width="match_parent"
+        android:paddingRight="5dp"
+        android:paddingLeft="5dp"
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

@@ -1,4 +1,4 @@
-package com.tsibteam.mobilefinancementor.domain
+package com.tsibteam.mobilefinancementor.domain.entity
 
 import android.os.Parcelable
 import kotlinx.parcelize.Parcelize

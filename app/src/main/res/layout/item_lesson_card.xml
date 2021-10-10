@@ -1,14 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
 
 <com.google.android.material.card.MaterialCardView android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_margin="10dp"
-    android:clickable="true"
+    android:layout_margin="5dp"
+    app:cardUseCompatPadding="true"
     android:focusable="true"
     android:background="#fff"
     android:minHeight="148dp"
@@ -111,3 +117,4 @@
     </LinearLayout>
 
 </com.google.android.material.card.MaterialCardView>
+</androidx.appcompat.widget.LinearLayoutCompat>
