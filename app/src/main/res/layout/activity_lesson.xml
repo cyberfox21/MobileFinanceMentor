@@ -36,7 +36,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
-            android:id="@+id/toolbar_logo"
+            android:id="@+id/btn_profile"
             android:layout_width="wrap_content"
             android:layout_height="24dp"
             android:layout_gravity="right|center_vertical"

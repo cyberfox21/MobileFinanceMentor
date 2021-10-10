@@ -23,9 +23,9 @@ class ProfileActivity : AppCompatActivity() {
     }
 
     private fun addListeners() {
-//        binding.materialToolBar.setOnClickListener {
-//            finish()
-//        }
+        binding.materialToolBar.setOnClickListener {
+            finish()
+        }
     }
 
     companion object {
